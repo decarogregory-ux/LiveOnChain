@@ -110,7 +110,8 @@ export default function Stream() {
         </div>
         <div style={rightPanel}>
           <div style={tabs}>
-            {[['tip','⚡ Tip'],['board','🏆 Board'],['earn','💎 Earn']].map(([id,label])=>(
+            {[['tip','Tip'],['board','Board'],['earn','Earn']].map(([id,label])=>(
+              <div key={id} style={{...tabItem,...(tab===id?activeTab:{})}} onClick={()=>setTab(id)}>{label}</div>
               <div key={id} style={{...tabItem,..( tab===id?activeTab:{})}} onClick={()=>setTab(id)}>{label}</div>
             ))}
           </div>
