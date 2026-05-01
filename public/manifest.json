@@ -1,18 +1,22 @@
-import Head from 'next/head'
-
-export default function App({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <title>LiveOnChain</title>
-        <meta name="theme-color" content="#00f5a0" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="LiveOnChain" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/icon-192.png" />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
+{
+  "name": "LiveOnChain",
+  "short_name": "LiveOnChain",
+  "description": "Web3 live streaming. Stream live. Keep 100%.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070810",
+  "theme_color": "#00F5A0",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/Screenshot_20260501_180933_Gallery.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/Screenshot_20260501_180933_Gallery.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
 }
